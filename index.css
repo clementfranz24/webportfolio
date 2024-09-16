@@ -1,0 +1,88 @@
+/* Root variables */
+:root {
+    --card-gap: 20px;
+}
+
+
+/* Declare universal font */
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+nav, nav a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+
+.navbar {
+    background-color: #006373 !important;
+    color: white;
+}
+
+
+#landing {
+    background: 
+        linear-gradient(rgb(86 203 205 / 81%), rgb(21 91 139)),
+        url("./images/heroBackground.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+}
+
+#landing h1 {
+    text-transform: uppercase;
+}
+/* 
+#projects .project-cards .row {
+    gap: var(--card-gap);
+}
+
+#projects .project-cards .col-lg-4, #projects .project-cards .col-4 {
+    --total-gap: calc(var(--card-gap) * 2);
+    --full-width: calc(100% - var(--total-gap)); 
+    width: calc(calc(var(--full-width)/ 3));
+}
+
+#projects .project-cards .col-sm-12 {
+    width: 100%;
+} */
+
+#projects .project-cards .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#tools .tool-img img {
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+}
+
+
+/* CONTACT STYLING */
+
+/* Big Screens */
+@media only screen and (min-width: 426px){
+    .googleMap-small {
+        display: none;
+    }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 425px){
+    .googleMap-big {
+        display: none;
+    }
+}
+
+#contact {
+    background-color: #006373;
+}
