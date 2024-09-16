@@ -86,3 +86,9 @@ nav, nav a {
 #contact {
     background-color: #006373;
 }
+
+
+
+#contact .contact-link-item a img {
+    height: 40px;
+}
